@@ -1,0 +1,25 @@
+{
+  "name": "home-session-02",
+  "version": "1.0.0",
+  "description": "Word counts and reverse functions",
+  "main": "app/index.js",  
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jasmine tests/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/herokidofficial/home-session-02.git"
+  },
+  "author": "Iraoya Osariemen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/herokidofficial/home-session-02/issues"
+  },
+  "homepage": "https://github.com/herokidofficial/home-session-02#readme",
+  "dependencies": {
+    "jasmine": "^2.5.3"
+  }
+}
