@@ -1,18 +1,18 @@
 'use strict'
 module.exports = {
 	/*function to return a hash of word counts*/
-	words: function(string) {
-		var word = string.replace(/[.]/g, '').split(/\s/);
+	words: function(str) {
+		var word = str.replace(/\s\s+/g, ' ').split(/\s/);
 		var expectedCounts = {};
-		word.forEach(function(w) {
-			if (!expectedCounts[w]) {
-				expectedCounts[w] = 0;
+		word.forEach(function(i) {
+			if (!expectedCounts[i]) {
+				expectedCounts[i] = 0;
 			}
-			expectedCounts += 1;
+			expectedCounts[i] += 1;
 		});
 		return expectedCounts;
 	},
-
+	/*reverse string function*/
 	reverseString: function(str) {
 		if (str === '') {
 			return null;

@@ -3,7 +3,7 @@
 var jasmine = require('jasmine');
 var myApp = require('../app/index.js');
 
-describe("words()", function() {
+describe("words", function() {
   it("counts one word", function() {
     var expectedCounts = { word: 1 };
     expect(myApp.words("word")).toEqual(expectedCounts);
