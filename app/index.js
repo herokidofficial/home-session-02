@@ -1,5 +1,6 @@
 'use strict'
 module.exports = {
+<<<<<<< HEAD
 	words: function(wordCount) {
 		// split words argument into an array containing each of the words in it using any amount of whitespace as delimiter
 		var listOfWords = wordCount.split(/\s+/);
@@ -32,6 +33,23 @@ module.exports = {
 	},
 
 	/*reverse string function*/
+||||||| merged common ancestors
+	/*function to return a hash of word counts*/
+	words: function(string) {
+		var word = string.replace(/[.]/g, '').split(/\s/);
+		var expectedCounts = {};
+		word.forEach(function(w) {
+			if (!expectedCounts[w]) {
+				expectedCounts[w] = 0;
+			}
+			expectedCounts += 1;
+		});
+		return expectedCounts;
+	},
+
+=======
+	/*reverse string function*/
+>>>>>>> reverse-string
 	reverseString: function(str) {
 		if (str === '') {
 			return null;
